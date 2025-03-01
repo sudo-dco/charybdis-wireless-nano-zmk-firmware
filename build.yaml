@@ -29,6 +29,9 @@ include:
     keymap: qwerty
     format: bt
     artifact-name: charybdis_qwerty_right
+    snippet: zmk-usb-logging
+
+
 
   # QWERTY Dongle
 #  - board: nice_nano_v2
