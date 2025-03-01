@@ -1,5 +1,4 @@
 #include "charybdis.dtsi"
-#include "charybdis_pmw3610.dtsi"
 
 // The matrix transform is 6 columns over because the left half is 6 columns wide.
 &default_transform {
@@ -17,18 +16,3 @@
 
 };
 
-&spi0 {
-    status = "okay";
-};
-
-&trackball {
-    status = "okay";
-};
-
-// https://github.com/badjeff/zmk-pmw3610-driver
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
-};
