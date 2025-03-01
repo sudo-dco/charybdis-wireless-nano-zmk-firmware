@@ -10,7 +10,7 @@
     /* input config for mouse move mode */
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
+        device = <&trackball>;
         layers = <5>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
@@ -23,7 +23,7 @@
     /* input config for snipe mode */
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
+        device = <trackball>;
         layers = <6>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
@@ -35,7 +35,7 @@
     /* input config for mouse scroll mode */
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
+        device = <&trackball>;
         layers = <7>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
