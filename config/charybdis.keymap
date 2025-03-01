@@ -23,7 +23,7 @@
     /* input config for snipe mode */
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
-        device = <trackball>;
+        device = <&trackball>;
         layers = <6>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
