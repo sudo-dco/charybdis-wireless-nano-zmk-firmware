@@ -124,10 +124,10 @@
 
 	symb {
 	     bindings = <
-	&trans &trans &trans &trans &trans &trans       &kp TILD    &kp LBRC  &kp RBRC  &kp GRAVE   &trans
-	&trans &trans &trans &trans &trans &trans       &kp PIPE    &kp LBKT  &kp RBKT  &kp LT      &kp GT
-	&trans &trans &trans &trans &trans &kp TILD     &kp AMPS    &kp LPRN  &kp RPRN  &kp QUOT    &kp BSLH
-	                     &trans &trans &trans            &trans  &trans
+	&trans &trans &trans &trans &trans       &kp TILD    &kp LBRC  &kp RBRC  &kp GRAVE   &trans
+	&trans &trans &trans &trans &trans       &kp PIPE    &kp LBKT  &kp RBKT  &kp LT      &kp GT
+	&trans &trans &trans &trans &kp TILD     &kp AMPS    &kp LPRN  &kp RPRN  &kp QUOT    &kp BSLH
+	         &trans &trans &trans            &trans      &trans
 			>;
 		};
 
@@ -142,28 +142,28 @@
 
         MOUSE {
             bindings = <
-	&trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans
-	&trans &mkp MB1 &mkp MB2 &mkp MB3   &trans       &trans &trans &trans &trans &trans &trans
-	&trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans
+	&trans &trans &trans &trans &trans              &trans &trans &trans &trans &trans
+	&trans &mkp MB1 &mkp MB2 &mkp MB3   &trans      &trans &trans &trans &trans &trans
+	&trans &trans &trans &trans &trans              &trans &trans &trans &trans &trans
 	                     &trans &trans &trans       &trans  &trans
             >;
         };
 
         SLOW {
             bindings = <
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                              &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans   
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans   
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  
+                    &trans    &trans    &trans    &trans    &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                              &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans   
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans   
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  
+                    &trans    &trans    &trans    &trans    &trans
             >;
         };
     };
