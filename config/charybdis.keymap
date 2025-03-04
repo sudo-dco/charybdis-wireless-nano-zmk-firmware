@@ -116,17 +116,17 @@
         nums {
  	     bindings = <
 	&trans &trans &trans   &trans  &trans      &kp EQL   &kp NUM_7  &kp NUM_8  &kp NUM_9   &kp NUM_0
-	&trans &trans &trans   &trans  &kp GRAV    &kp MINUS &kp NUM_4  &kp NUM_5  &kp NUM_6   &trans
-	&trans &trans &kp BKSP &kp DEL &kp TILD    &kp AMPS  &kp NUM_1  &kp NUM_2  &kp NUM_3   &kp DOT
+	&trans &trans &trans   &trans  &kp GRAV    &kp MINUS &kp NUM_4  &kp NUM_5  &kp NUM_6   &kp BKSP
+	&kp UNDERSCORE &trans &kp BKSP &kp DEL &kp TILD    &kp PLUS  &kp NUM_1  &kp NUM_2  &kp NUM_3   &kp DOT
                       &trans &trans &trans         &trans    &trans
 			>;
 	};
 
 	symb {
 	     bindings = <
-	&trans &trans &trans &trans &trans       &kp TILD    &kp LBRC  &kp RBRC  &kp GRAVE   &trans
+	&trans &trans &trans &trans &trans       &kp TILD    &kp LBRC  &kp RBRC  &kp GRAVE   &kp UNDERSCORE
 	&trans &trans &trans &trans &trans       &kp PIPE    &kp LBKT  &kp RBKT  &kp LT      &kp GT
-	&trans &trans &trans &trans &kp TILD     &kp AMPS    &kp LPRN  &kp RPRN  &kp QUOT    &kp BSLH
+	&kp UNDERSCORE &trans &trans &trans &kp TILD     &kp AMPS    &kp LPRN  &kp RPRN  &kp QUOT    &kp BSLH
 	         &trans &trans &trans            &trans      &trans
 			>;
 		};
