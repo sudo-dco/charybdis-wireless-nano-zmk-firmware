@@ -93,8 +93,7 @@
     layers = <LAYERS>; \
   };
 
-COMBO(cut, &kp LC(X), 21 23, BASE)
-    };
+};
 
 // #define BASE    0
 // #define NAV     1
