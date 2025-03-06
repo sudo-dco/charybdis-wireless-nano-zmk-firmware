@@ -23,10 +23,10 @@
 #define SLOW    6
 #define SCROLL  7
 
-#include "combos.dtsi" // Must be sourced after HRM-combo hack.
-
 
 / {
+#include "combos.dtsi" // Must be sourced after HRM-combo hack.
+
     /* input config for mouse move mode */
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
