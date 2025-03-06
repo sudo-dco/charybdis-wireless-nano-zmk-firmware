@@ -81,8 +81,10 @@
   ╰───────╮ 30  31  32 │ │ 33  34 ╭───────────╯
           ╰────────────╯ ╰────────╯            */
 
-compatible = "zmk,combos";
 
+/* Text processing */
+    combos {
+        compatible = "zmk,combos";
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
@@ -91,24 +93,12 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-/* Text processing */
-    combos {
-        compatible = "zmk,combos";
-COMBO(cut, &kp LC(X), 21 23, BASE)
-COMBO(copy, &kp LC(C), 21 22, BASE)
-COMBO(paste, &kp LC(V), 22 23, BASE)
-COMBO(caps_word, &caps_word, 13 16, BASE)
+	COMBO(cut, &kp LC(X), 21 23, BASE)
+	COMBO(copy, &kp LC(C), 21 22, BASE)
+	COMBO(paste, &kp LC(V), 22 23, BASE)
+	COMBO(caps_word, &caps_word, 13 16, BASE)
     };
 
-// ╭──────┬──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────┬──────╮
-//    00     01     02     03    04      05        06     07     08     09     10     11
-// ├──────┼──────┼──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┼──────┼──────┼──────┤
-//    12     13     14     15    16      17        18     19     20     21     22     23
-// ├──────┼──────┼──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┼──────┼──────┼──────┤
-//    24     25     26     27    28      29        30     31     32     33     34     35
-// ╰──────┴──────┴──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┴──────┴──────┴──────╯
-//                         36     37     38        39     40
-//                      ╰──────┴──────┴──────╯  ╰──────┴──────╯
 // #define BASE    0
 // #define NAV     1
 // #define NUM     2
