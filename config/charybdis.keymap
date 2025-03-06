@@ -23,6 +23,9 @@
 #define SLOW    6
 #define SCROLL  7
 
+#include "combos.dtsi" // Must be sourced after HRM-combo hack.
+
+
 / {
     /* input config for mouse move mode */
     trackball_listener {
@@ -98,8 +101,6 @@
   ╰───────╮ 30  31  32 │ │ 33  34 ╭───────────╯
           ╰────────────╯ ╰────────╯            */
 
-
-#include "combos.dtsi" // Must be sourced after HRM-combo hack.
 
     keymap {
         compatible = "zmk,keymap";
