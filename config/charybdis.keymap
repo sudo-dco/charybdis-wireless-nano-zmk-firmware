@@ -38,7 +38,7 @@
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <4>;
         scale-divisor = <5>;
-        bindings = <&ib_toggle_layer 7>;
+        // bindings = <&ib_toggle_layer 7>;
     };
 
     /* input config for snipe mode */
