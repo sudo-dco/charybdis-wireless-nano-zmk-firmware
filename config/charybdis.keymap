@@ -38,7 +38,7 @@
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <4>;
         scale-divisor = <5>;
-        // bindings = <&ib_toggle_layer 7>;
+        bindings = <&ib_toggle_layer 7>;
     };
 
     /* input config for snipe mode */
@@ -62,7 +62,7 @@
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
-        bindings = <&ib_wheel_scaler 1 6>;
+        bindings = <&ib_wheel_scaler 1 4>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
@@ -85,10 +85,10 @@
         hm: homerow_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <175>; // triggers the hold behavior when the tapping-term-ms has expired
-            quick-tap-ms = <150>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
-            require-prior-idle-ms = <185>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>; // triggers the hold behavior when the tapping-term-ms has expired
+            quick-tap-ms = <100>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
+            //require-prior-idle-ms = <185>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
             bindings = <&kp>, <&kp>;  // hold, tap
         };
     };
