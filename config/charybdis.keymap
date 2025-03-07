@@ -62,7 +62,7 @@
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
-        bindings = <&ib_wheel_scaler 1 4>;
+        bindings = <&ib_wheel_scaler 1 32>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
