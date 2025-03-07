@@ -14,8 +14,12 @@
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
           ╰─────────────╯ ╰─────────────╯ */
 
-ZMK_COMBO(undo, &kp LC(Z), LM2 LB4)
-ZMK_COMBO(copy, &kp LC(C), LB3 LB2)
-ZMK_COMBO(cut, &kp LC(X), LB3 LB1)
-ZMK_COMBO(paste, &kp LC(V), LB2 LB1)
-ZMK_COMBO(caps_word, &caps_word, LM1 RM1)
+ZMK_COMBO(undo, &kp LC(Z), LM2 LB4, All,  COMBO_TERM_FAST, COMBO_IDLE_FAST))
+ZMK_COMBO(copy, &kp LC(C), LB3 LB2, All,  COMBO_TERM_FAST, COMBO_IDLE_FAST))
+ZMK_COMBO(cut, &kp LC(X), LB3 LB1, All,  COMBO_TERM_FAST, COMBO_IDLE_FAST))
+ZMK_COMBO(paste, &kp LC(V), LB2 LB1, All,  COMBO_TERM_FAST, COMBO_IDLE_FAST))
+ZMK_COMBO(caps_word, &caps_word, LM1 RM1, All,  COMBO_TERM_FAST, COMBO_IDLE_FAST))
+
+ZMK_COMBO(paste, &kp UNDERSCORE, RB1 RB2, All,  COMBO_TERM_FAST, COMBO_IDLE_FAST))
+ZMK_COMBO(paste, &kp MINUS, RB2 RB3, All,  COMBO_TERM_FAST, COMBO_IDLE_FAST))
+
