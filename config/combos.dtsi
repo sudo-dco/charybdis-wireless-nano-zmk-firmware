@@ -26,11 +26,12 @@ ZMK_COMBO(minus, &kp MINUS, RB2 RB3, ALL,  COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 ZMK_MOD_MORPH(mm_lbracket,
     bindings = <&lt LPRN>, <&kp LBKT>;
-    mods = <(MOD_LSFT)>;
+    mods = <MOD_LSFT>;
 )
+
 ZMK_MOD_MORPH(mm_lbracket,
     bindings = <&lt RPRN>, <&kp RBKT>;
-    mods = <(MOD_LSFT)>;
+    mods = <MOD_LSFT>;
 )
 ZMK_COMBO(lbracket, &mm_lbracket, RT1 RT2, ALL,  COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rbracket, &mm_rbracket, RT2 RT3, ALL,  COMBO_TERM_FAST, COMBO_IDLE_FAST)
