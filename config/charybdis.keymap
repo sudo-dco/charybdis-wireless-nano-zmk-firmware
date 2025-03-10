@@ -28,7 +28,7 @@
 
 ZMK_MOD_MORPH(mm_del_num,
     bindings = <&lt NUM BSPC>, <&kp DEL>;
-    mods = <MOD_LSFT>;
+    mods = <(MOD_LSFT)>;
 )
 
 
