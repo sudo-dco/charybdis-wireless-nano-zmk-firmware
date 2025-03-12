@@ -24,12 +24,23 @@
 #define SLOW    6
 #define SCROLL  7
 
-#include "combos.dtsi" // Must be sourced after HRM-combo hack.
+
+ZMK_MOD_MORPH(mm_lbracket,
+    bindings = <&kp LPRN>, <&kp LBKT>;
+    mods = <(MOD_LSFT)>;
+)
+
+ZMK_MOD_MORPH(mm_rbracket,
+    bindings = <kp RPRN>, <&kp RBKT>;
+    mods = <(MOD_LSFT)>;
+)
 
 ZMK_MOD_MORPH(mm_del_num,
     bindings = <&lt NUM BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT)>;
 )
+
+#include "combos.dtsi" // Must be sourced after HRM-combo hack.
 
 
 / {
