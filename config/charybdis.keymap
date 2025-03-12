@@ -37,7 +37,7 @@ ZMK_MOD_MORPH(mm_rbracket,
 
 ZMK_MOD_MORPH(mm_del_num,
     bindings = <&lt 2 BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT)>;
+    mods = <(MOD_RSFT)>;
 )
 
 #include "combos.dtsi" // Must be sourced after HRM-combo hack.
