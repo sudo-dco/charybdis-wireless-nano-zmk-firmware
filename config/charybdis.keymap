@@ -36,7 +36,7 @@ ZMK_MOD_MORPH(mm_rbracket,
 )
 
 ZMK_MOD_MORPH(mm_del_num,
-    bindings = <&lt NUM BSPC>, <&kp DEL>;
+    bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT)>;
 )
 
