@@ -13,7 +13,7 @@
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // Thumb keys.
 
 
-#define BASE    0
+#define DEF     0
 #define NAV     1
 #define FN      2
 #define NUM     3
@@ -278,49 +278,49 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
     keymap {
         compatible = "zmk,keymap";
 
-	base {
-	    bindings = <
-    &kp Q       &kp W       &kp F        &kp P         &kp B          &kp J     &kp L        &kp U         &kp Y        &kp SQT 
-    &hml LGUI A &hml LALT R &hml LSHFT S &hml LCTRL T  &kp G          &kp M     &hmr LCTRL N &hmr RSHFT E  &hmr LALT I  &hmr LGUI O
-    &kp Z       &kp X       &kp C        &kp D         &kp V          &kp K     &kp H        &comma_morph  &dot_morph  &qexcl
-                            ___          &lt_spc NAV 0 &lt FN RET     SMART_NUM MAGIC_SHIFT
-			>;
-	};
+        BASE {
+            bindings = <
+  &kp Q       &kp W       &kp F        &kp P         &kp B          &kp J     &kp L        &kp U         &kp Y        &kp SQT 
+  &hml LGUI A &hml LALT R &hml LSHFT S &hml LCTRL T  &kp G          &kp M     &hmr LCTRL N &hmr RSHFT E  &hmr LALT I  &hmr LGUI O
+  &kp Z       &kp X       &kp C        &kp D         &kp V          &kp K     &kp H        &comma_morph  &dot_morph  &qexcl
+                          ___          &lt_spc NAV 0 &lt FN RET     SMART_NUM MAGIC_SHIFT
+            >;
+        };
 
-	nav {
-	    bindings = <
-    ___           ___           &kp LS(TAB)   &swapper    ___           &kp PG_UP     NAV_BSPC      ___           NAV_DEL       ___
-	&sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL   ___           &kp PG_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT
-	___           ___           ___           ___         ___           &kp INS       &kp TAB       &kp RET       ___           ___ 
-                                ___           ___         ___           ___           CANCEL
-			>;
-	};
+        NAV {
+            bindings = <
+  ___           ___           &kp LS(TAB)   &swapper    ___           &kp PG_UP     NAV_BSPC      ___           NAV_DEL       ___
+  &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL   ___           &kp PG_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT
+  ___           ___           ___           ___         ___           &kp INS       &kp TAB       &kp RET       ___           ___ 
+                              ___           ___         ___           ___           CANCEL
+            >;
+        };
 
-	fn {
-	     bindings = <
-    &kp F12       &kp F7        &kp F8        &kp F9        ___            ___           &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    ___
-    &hml LGUI F11 &hml LALT F4  &hml LSHFT F5 &hml LCTRL F6 ___            ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___
-    &kp F10       &kp F1        &kp F2        &kp F3        ___            PIN_APP       PIN_WIN       DSK_MGR       ___           ___
-                                ___           ___           ___            &kp C_MUTE    &kp C_PP
-			>;
-		};
+        FN {
+            bindings = <
+  &kp F12       &kp F7        &kp F8        &kp F9        ___            ___           &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    ___
+  &hml LGUI F11 &hml LALT F4  &hml LSHFT F5 &hml LCTRL F6 ___            ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___
+  &kp F10       &kp F1        &kp F2        &kp F3        ___            PIN_APP       PIN_WIN       DSK_MGR       ___           ___
+                              ___           ___           ___            &kp C_MUTE    &kp C_PP
+            >;
+        };
 
-    num {
-        bindings = <
-    ___           &kp N7        &kp N8        &kp N9        ___            ___           ___           ___           ___           ___
-    &hml LGUI N0  &hml LALT N4  &hml LSHFT N5 &hml LCTRL N6 ___            ___           ___           ___           ___           ___ 
-    ___           &kp N1        &kp N2        &kp N3        ___            ___           ___           ___           ___           ___
-                                ___           &kp N0        ___            ___           ___
+        NUM {
+              bindings = <
+  ___           &kp N7        &kp N8        &kp N9        ___            ___           ___           ___           ___           ___
+  &hml LGUI N0  &hml LALT N4  &hml LSHFT N5 &hml LCTRL N6 ___            ___           ___           ___           ___           ___ 
+  ___           &kp N1        &kp N2        &kp N3        ___            ___           ___           ___           ___           ___
+                              ___           &kp N0        ___            ___           ___
               >;
         };
 
-	sys {
-	     bindings = <
-    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      ___           ___           ___           ___           ___
-	___           ___           ___           ___           ___         ___           ___           ___           ___           ___
-	___           ___           ___           ___           ___         ___           ___           ___           ___           ___
-	                            ___           ___           ___         ___           ___
-			>;
+        SYS {
+            bindings = <
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR  ___           ___           ___           ___           ___
+  ___           ___           ___           ___           ___         ___           ___           ___           ___           ___
+  ___           ___           ___           ___           ___         ___           ___           ___           ___           ___
+                              ___           ___           ___         ___           ___
+            >;
         };
 
         MOUSE {
