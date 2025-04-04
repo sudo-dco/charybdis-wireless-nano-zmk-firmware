@@ -289,7 +289,7 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
 
         NAV {
             bindings = <
-  ___           ___           &kp LS(TAB)   &swapper    ___           &kp PG_UP     NAV_BSPC      ___           NAV_DEL       ___
+  ___           ___           &kp LS(TAB)   ___         ___           &kp PG_UP     NAV_BSPC      ___           NAV_DEL       ___
   &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL   ___           &kp PG_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT
   ___           ___           ___           ___         ___           &kp INS       &kp TAB       &kp RET       ___           ___ 
                               ___           ___         ___           ___           CANCEL
